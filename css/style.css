@@ -1,0 +1,731 @@
+@font-face {
+  font-family: Gilroy-Semibold;
+  src: url(../assets/fonts/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url(../assets/fonts/Gilroy-Regular.ttf);
+}
+body{
+    background-color: #030203 ;
+    color: purple;
+}
+.frameBox{
+    
+    background: url('../assets/frame\ for\ web\ 1.png') no-repeat center left transparent;
+    width: 80vw; 
+    height:88vw;
+    position: relative;
+    right: 2vw;
+    background-size: contain;
+    background-position: top;
+    margin-bottom: -42vw;
+    
+}
+
+.frameBox iframe {
+   width:63vw;
+   height:33.7vw;
+    position: absolute;
+    top: 6.5vw; 
+    left: 11.2%; 
+}
+
+.card{
+  width: 380px;
+  margin-bottom: 50px;
+}
+.workshopCard{
+  display: flex;
+  justify-content: center;
+}
+
+.cardImage{
+    clip-path: polygon(0 0,100% 0, 100% 50%, 0 80%);
+}
+
+ .card:after{
+    content:"";
+    position:absolute;
+    left:10px;
+    top:10px;
+    border: solid 1px white;
+    width: 360px;
+    height: 380px;
+} 
+
+
+.scrollHead{
+    background: url('../assets/sc1.png') no-repeat center left transparent;
+    width: 70vw; 
+    height:15vw;
+    position: relative;
+    background-size: contain;
+    background-position: top;
+    z-index: 50;
+}
+
+.sched1{
+    background: url('../assets/sc21.png') no-repeat center left transparent;
+    width: 65vw; 
+    height:61vw;
+    margin-top: -10vw;
+    position: relative;
+    background-size: contain;
+    background-position: top;
+    border: none;
+    animation: fadeIn 0.5s ease-in both;
+}
+.sched2{
+  background: url('../assets/sc22.png') no-repeat center left transparent;
+  width: 65vw; 
+  height:61vw;
+  margin-top: -10vw;
+  position: relative;
+  background-size: contain;
+  background-position: top;
+  border: none;
+  animation: fadeIn 0.5s ease-in both;
+}
+.sched3{
+  background: url('../assets/sc23.png') no-repeat center left transparent;
+  width: 65vw; 
+  height:61vw;
+  margin-top: -10vw;
+  position: relative;
+  background-size: contain;
+  background-position: top;
+  border: none;
+  animation: fadeIn 0.5s ease-in both;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+#gallery{
+    width: 100%;
+
+}
+/* gallery*/
+.galleryCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 75vw;
+    height: 45vw;
+    top: 1.5vw;
+    left: 3vw;
+   
+    overflow: hidden;
+    transform: skew(5deg);
+    z-index: 12;
+  }
+  .galleryCon .pic {
+    flex: 1;
+    transition: all 1s ease-in-out;
+    height: 70vmin;
+    position: relative;
+  }
+  .galleryCon .pic .card__head {
+    color: black;
+    background: rgba(84, 83, 81, 0.75);
+    padding: 0.5em;
+    transform: rotate(-90deg);
+    transform-origin: 0% 0%;
+    transition: all 0.5s ease-in-out;
+    min-width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1em;
+    white-space: nowrap;
+  }
+  .galleryCon .pic:hover {
+    flex-grow: 10;
+  }
+  .galleryCon .pic:hover img {
+    filter: grayscale(0);
+  }
+  .galleryCon .pic:hover .card__head {
+    text-align: center;
+    top: calc(100% - 2em);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    transform: rotate(0deg) skew(-5deg);
+  }
+  .galleryCon .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    filter: grayscale(100%);
+  }
+  .galleryCon .pic:not(:nth-child(5)) {
+    margin-right: 1em;
+  }
+ .galleryFrame{
+    background: url('../assets/goldLeaf.png') no-repeat center left transparent;
+    width: 88vw; 
+    height:90vw;
+    margin-left: 5vmin;
+    position: relative;
+    background-size: contain;
+    background-position: top;
+    margin-bottom: -42vw;
+ } 
+
+ form {
+    
+    padding-left:25px;
+    padding-right:25px;
+    
+   
+    margin: 12px auto;
+ 
+  
+    z-index:12;
+  }
+  
+  
+  
+  form > input,
+  form > textarea {
+    padding: 12px;
+    margin: 12px auto;
+    border: 1px solid #ccc;
+    color: #ddd;
+    background-color: #10141B;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+  }
+  
+  form > textarea{
+    height:100px;
+    resize:none;
+  }
+  
+  form > input[type="submit"] {
+    max-width: 20vw;
+    padding-left: 1%;
+    padding-right: 1%;
+    cursor: pointer;
+    transition: 0.35s;
+  }
+  
+  form > input[type="submit"]:hover {
+    background-color: #555;
+  }
+
+#maps{
+    padding: 12px;
+    width: 80%;
+    height:84%;
+}  
+
+
+h1 {
+    font-family: 'Spectral', serif;
+    color: #a67019;
+    font-size: 28px;
+    font-weight: 400;;
+}
+h2 {
+  font-family: 'Spectral', serif;
+  color: #da9629;
+  font-size: 18px;
+  font-weight: 400;;
+}
+h5{
+    font-family: 'Poppins', sans-serif;
+
+}
+h3{
+    font-family: 'Spectral', serif;
+    color: #FFF4E2;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color: #FFF4E2;
+}
+
+#speakers p{
+    text-align: justify;
+   
+  }
+.sponsers img{
+    margin-bottom:-80px ;
+}  
+
+#landing{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+#landing-image {
+
+    height: 100vh;
+    object-fit: cover;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    
+   
+
+  }
+  .vidCon::after{
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    content: '';
+    background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 100%);
+  }
+ 
+.logoclass img{
+    margin-top: 15vw;
+    width: 560px;
+}
+
+
+.mainBtn{
+    visibility: hidden;
+}
+html, body {
+    overflow-x: hidden;
+  }
+
+.customBtn{
+    width: 150px;
+    padding-bottom: 5px;
+    height: 70px;
+    padding-top: 5px;
+    background-image: url('../assets/button\ frame\ color.png')  ;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    color: #62123e;
+    
+    
+}
+a {
+  color: #6b3a06;
+  font-size: 18px;
+}
+.customBtn:hover{
+    width: 150px;
+    background-image: url('../assets/button\ frame\ hover.png') ;
+}
+
+.customBtn:hover a{
+  color: #ffffff !important;
+}
+#btnstyle{
+  color: #62123e;
+}
+#btnstyle:hover{
+  color: #ffffff;
+}
+.button-div{
+  margin-left: 2vw;
+}
+.button-div:hover{
+  color: #ffffff;
+}
+.logoclass{
+    flex-direction: column;
+    z-index: 200;
+}
+
+#sec1{
+    background-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 16%, rgba(255,255,255,0) 86%, rgba(0,0,0,1) 100%), url('../assets/magenta_mystical.jpg') ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainBtn{
+  z-index: 100;
+}
+
+
+@media only screen and (min-device-width: 310px) and (max-device-width: 480px){
+    .logoclass img{
+      
+        width: 120vw;
+        margin-left: 25px;
+        transform: translateY(70px)
+    }
+    #landing-image{
+        object-fit:cover ;
+        object-position:-300px;
+    }
+    .mainBtn{
+        visibility:visible;
+        margin-top: 10vh;
+    }
+    p{
+      font-size: 16px !important;
+    }
+    .customJustify{
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  .flip-card {
+    max-width: 250px;
+    max-height: 300px;
+  }
+  .flip-card p{
+    font-size: 12px !important;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  
+  .ticketImg{
+    max-width: 85vw;
+  }
+  .card{
+   
+    width: 280px;
+    margin-bottom: 50px;
+  }
+  .card p{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .card:after{
+    width: 260px;
+    height: 340px;
+  }
+  #alohomora{
+    transform: translateX(-50%) translateY(100%);
+  }
+  tspan{
+    font-size: 108px;
+  }
+  a {
+    font-family: 'Spectral', serif;
+    font-size: 14px ;
+  }
+}
+
+
+p{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navcas {
+    width:100%;
+    z-index: 1500;
+    background-color: transparent;
+    position: fixed;
+   
+    color: #f6d59d;
+    transition: 0.5s;
+    padding: 1vh 3vw 1vh 3vw;
+
+}  
+.navcas a {
+    font-family: 'Gilroy-Regular', sans-serif;
+    color: #FFF4E2;
+    font-size: 1.4rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.navcas a:hover {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.navcas a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF; /* Change this to the color you want */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navcas a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+.navbar{
+  font-family: 'Gilroy-Regular', sans-serif;
+}
+
+#about{
+  margin-top: 100px;
+ 
+}
+#speakers{
+  margin-top: 100px;
+}
+#highlights{
+  margin-top: 100px;
+  background-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 16%, rgba(255,255,255,0) 86%, rgba(0,0,0,1) 100%), url(../assets/magenta-mystical-landscape-with-nature\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#workshops{
+  margin-top: 100px;
+  margin-top: 100px;
+  background-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 16%, rgba(255,255,255,0) 86%, rgba(0,0,0,1) 100%), url(../assets/magenta-mystical-landscape-with-nature.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#ticket{
+  margin-top: 100px;
+}
+#schedule{
+  margin-top: 100px;
+}
+#sponsers{
+  margin-top: 100px;
+}
+#gallery{
+  margin-top: 100px;
+}
+#contact{
+  margin-top: 100px;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.titleImg{
+  width:256px;
+  margin-bottom: 30px;
+}
+.navbar-toggler{
+ border: none;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+.menuBttn{
+  color: #f2d29d;
+  font-size: 40px;
+
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#2f0820 ;
+  z-index: 9999;
+}
+#preloader svg {
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cls-6 {
+  fill: #ffe131;
+
+}
+
+.cls-7 {
+  opacity: 0.05;
+
+}
+
+svg {
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  overflow: visible;
+
+}
+#alohomora{
+  transform: translateX(-50%) translateY(100%);
+}
+tspan{
+  font-size: 58px;
+}
+
+#wand {
+  animation: magic 4s ease infinite;
+}
+
+@keyframes magic {
+
+  0% {transform: rotate(0deg) translateX(0px) rotate(0deg) scale(1); transform-origin: 50% 50%;}
+  15% {transform: rotate(0deg) translateX(50px) rotate(0deg) scale(1); transform-origin: 50% 50%;}
+  70% {transform: rotate(360deg) translateX(0px) rotate(-360deg) scale(1); transform-origin: 50% 50%;}
+  77% {transform: rotate(360deg) translateX(0px) rotate(-360deg) scale(0.9); transform-origin: 50% 50%;}
+  80%   {transform: rotate(360deg) translateX(0px) rotate(-360deg) scale(1); transform-origin: 50% 50%;}
+  100%   {transform: rotate(360deg) translateX(0px) rotate(-360deg) scale(1); transform-origin: 50% 50%;}
+
+
+}
+
+#star1 {
+  animation: twinkle 4s ease infinite;
+}
+
+@keyframes twinkle {
+
+  0% {transform: scale(0); opacity: 0; transform-origin: 60% 40%;}
+  77% {transform: scale(0); opacity: 0; transform-origin: 60% 40%;}
+  82% {transform: scale(1.2); opacity: 1; transform-origin: 60% 40%;}
+  87% {transform: scale(1); opacity: 1; transform-origin: 60% 40%;}
+  100% {transform: scale(1); opacity: 1; transform-origin: 60% 40%;}
+
+}
+
+#star2 {
+  animation: twinkle2 4s ease infinite;
+}
+
+@keyframes twinkle2 {
+
+  0% {transform: scale(0); opacity: 0; transform-origin: 60% 40%;}
+  82% {transform: scale(0); opacity: 0; transform-origin: 60% 40%;}
+  87% {transform: scale(1.2); opacity: 1; transform-origin: 60% 40%;}
+  92% {transform: scale(1); opacity: 1; transform-origin: 60% 40%;}
+  100% {transform: scale(1); opacity: 1; transform-origin: 60% 40%;}
+
+}
+
+#star3 {
+  animation: twinkle3 4s ease infinite;
+}
+
+@keyframes twinkle3 {
+
+  0% {transform: scale(0); opacity: 0; transform-origin: 60% 60%;}
+  87% {transform: scale(0); opacity: 0; transform-origin: 60% 60%;}
+  92% {transform: scale(1.2); opacity: 1; transform-origin: 60% 60%;}
+  97% {transform: scale(1); opacity: 1; transform-origin: 60% 60%;}
+  100% {transform: scale(1); opacity: 1; transform-origin: 60% 60%;}
+
+}
+
+#star4 {
+  animation: twinkle4 4s ease infinite;
+}
+
+@keyframes twinkle4 {
+
+  0% {transform: scale(0); opacity: 0; transform-origin: 60% 60%;}
+  92% {transform: scale(0); opacity: 0; transform-origin: 60% 60%;}
+  97% {transform: scale(1.2); opacity: 1; transform-origin: 60% 60%;}
+  100% {transform: scale(1); opacity: 1; transform-origin: 60% 60%;}
+
+}
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 13%, rgba(255,255,255,0) 85%, rgba(0,0,0,1) 100%);
+}
+#particle {
+ 
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:-10; 
+}
+
+#speakers{
+  z-index: 2;
+  position: relative;
+}
+#footer{
+  z-index: 2;
+  position: relative;
+  background-color: #000000;
+}
+#contact{
+  z-index: 2;
+  position: relative;
+  background-color: #000000;
+}
+
+#schedule{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin-bottom: 10vh;
+ 
+  background-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 16%, rgba(255,255,255,0) 86%, rgba(0,0,0,1) 100%), url('../assets/schedule.jpg') ;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ a {
+  font-family: 'Gilroy-Regular', serif;
+}
+.customBtn a{
+  font-size: 14px;
+}
